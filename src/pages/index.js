@@ -22,7 +22,6 @@ function HomepageHeader() {
             Get Started
           </Link>
         </div>
-        <img src={js} className={clsx('logo', styles.jslogo)}/>
       </div>
     </header>
   );

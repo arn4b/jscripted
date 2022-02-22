@@ -21,11 +21,3 @@
   align-items: center;
   justify-content: center;
 }
-
-.jslogo {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  height: 350px;
-  width: 350px;
-}
