@@ -21,3 +21,15 @@
   align-items: center;
   justify-content: center;
 }
+
+.img {
+  width: 250px;
+  height: 250px;
+}
+
+@media screen and (max-width: 768px) {
+  .img {
+    width: 100px;
+    height: 100px;
+  }
+}
