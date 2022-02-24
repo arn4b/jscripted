@@ -133,3 +133,21 @@ function flatten(arr, flattenedArray = [], depth = 1) {
     return flattenedArray
 }
 ```
+
+## Array.flat() polyfill (recursive function) (without depth variable)
+
+
+```js
+function flatten(arr, flattenedArray = []) {
+
+    arr.forEach(item => {
+        if(Array.isArray(item)) {
+            flatten(item, flattenedArray)
+        } else {
+            flattenedArray.push(item)
+        }
+    })
+
+    return flattenedArray
+}
+```
