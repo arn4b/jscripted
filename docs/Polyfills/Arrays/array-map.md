@@ -60,7 +60,7 @@ Array.prototype.myMap = function(callback){
 **Requirement 2 : The current element, the index of the current element and the context must be passed as an argument to the callback function.**
 
 
-Now, we start to iterate through the elements of the array. The array will be accessible using the **this** keyword inside out polyfill.
+Now, we start to iterate through the elements of the array. The array will be accessible using the **this** keyword inside our polyfill.
 For each element, we check whether it exists in the array or not. If it does, we add it to our new *results* array by passing it to our callback function. Finally, we return our new array.
 
 ```js
