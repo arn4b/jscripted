@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 5
 id: reduce
 title: Array.reduce()
 ---
@@ -73,11 +73,11 @@ Array.prototype.myReduce = function(callback, initialValue){ //Requirement 1 ful
     //undefined is used in case an initialValue is not passed, as it is an optional value
 
     //Iterating through the array
-    for(let i = 0; i< this.length; i++){
+    for(let index = 0; index< this.length; index++){
         if(accumulator) {
-            accumulator = callback.call(accumulator, this[i], index, this)      //Requirement 2 fulfilled
+            accumulator = callback.call(accumulator, this[index], index, this)      //accumulator => for storing the previous values ,this[index] => the current element, index => index of the current element, this => the array itself
         } else {
-            accumulator = this[i]
+            accumulator = this[index]
         }
     }
 
@@ -91,11 +91,11 @@ Array.prototype.myReduce = function(callback, initialValue){ //Requirement 1 ful
 Array.prototype.myReduce = function(callback, initialValue){ 
     let accumulator = initialValue || undefined;
     
-    for(let i = 0; i< this.length; i++){
+    for(let index = 0; index< this.length; index++){
         if(accumulator) {
-            accumulator = callback.call(accumulator, this[i], index, this)      
+            accumulator = callback.call(accumulator, this[index], index, this)      
         } else {
-            accumulator = this[i]
+            accumulator = this[index]
         }
     }
 

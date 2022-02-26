@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 3
 id: map
 title: Array.map()
 ---
@@ -54,7 +54,6 @@ Next, we need an array to store the modified values.
 Array.prototype.myMap = function(callback){
     const result = []
 }
-
 ```
 
 **Requirement 2 : The current element, the index of the current element and the context must be passed as an argument to the callback function.**
@@ -68,9 +67,9 @@ Array.prototype.myMap = function(callback){ //Requirement 1 fulfilled
     const result = []
 
     //Iterating through the array
-    for(let i = 0; i< this.length; i++){
-        if(this.indexOf(this[i]) > -1){ //Checking whether the element exists or not
-            result[i] = callback(this[i], i, this) //Requirement 2 fulfilled
+    for(let index = 0; index< this.length; index++){
+        if(this.indexOf(this[index]) > -1){ //Checking whether the element exists or not
+            result[index] = callback(this[index], index, this) //this[index] => the current element, index => index of the current element, this => the array itself
         }
     }
 
@@ -84,9 +83,9 @@ Array.prototype.myMap = function(callback){ //Requirement 1 fulfilled
 Array.prototype.myMap = function(callback){
     const result = []
 
-    for(let i = 0; i< this.length; i++){
-        if(this.indexOf(this[i]) > -1){
-            result[i] = callback(this[i], i, this)
+    for(let index = 0; index< this.length; index++){
+        if(this.indexOf(this[index]) > -1){
+            result[index] = callback(this[index], index, this)
         }
     }
 

@@ -64,8 +64,8 @@ Array.prototype.myFlatten = function(depth = 1){
     const flattenedArray = []
 
     //Iterating through the array
-    for(let i = 0; i< this.length; i++){  
-        const element = this[i]     //assigning the element at current index to a variable for ease
+    for(let index = 0; index< this.length; index++){  
+        const element = this[index]     //assigning the element at current index to a variable for ease
         if(Array.isArray(element) && depth > 0){        //checking whether it is an array and at the same time whether we have to still further flatten the array or not if depth more than 0
             flattenedArray = flattenedArray.concat(this.myFlatten.call(element, depth - 1))
         } else {
@@ -84,8 +84,8 @@ Array.prototype.myFlatten = function(depth = 1){
     const flattenedArray = []
 
     
-    for(let i = 0; i< this.length; i++){  
-        const element = this[i]     
+    for(let index = 0; index< this.length; index++){  
+        const element = this[index]     
         if(Array.isArray(element) && depth > 0){
             flattenedArray = flattenedArray.concat(this.myFlatten.call(element, depth - 1))
         } else {

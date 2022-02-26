@@ -21,7 +21,6 @@ const result = words.filter(word => word.length > 6);
 
 console.log(result);
 // expected output: Array ["exuberant", "destruction", "present"]
-
 ```
 
 filter() calls a provided callback function once for each element in an array, and constructs a new array of all the values for which callbackFn returns a value that coerces to true. callbackFn is invoked only for indexes of the array which have assigned values; it is not invoked for indexes which have been deleted or which have never been assigned values. Array elements which do not pass the callbackFn test are skipped, and are not included in the new array.
@@ -52,7 +51,6 @@ Next, we need an array to store the filtered values.
 Array.prototype.myFilter = function(callback){
     const result = []
 }
-
 ```
 
 Now, we start to iterate through the elements of the array. The array will be accessible using the **this** keyword inside our polyfill.
@@ -63,9 +61,9 @@ Array.prototype.myFilter = function(callback){ //Requirement 1 fulfilled
     const result = []
 
     //Iterating through the array
-    for(let i = 0; i< this.length; i++){
-        if(callback(this[i], i, this)) {        //passing the current element, index and context to the callback function
-            result.push(this[i])        //if it satisfies the filter, we push it
+    for(let index = 0; index< this.length; index++){
+        if(callback(this[index], index, this)) {        //passing the current element, index and context to the callback function
+            result.push(this[index])        //if it satisfies the filter, we push it
         }
     }
 
@@ -80,9 +78,9 @@ Array.prototype.myFilter = function(callback){
     const result = []
 
     
-    for(let i = 0; i< this.length; i++){
-        if(callback(this[i], i, this)) {
-            result.push(this[i])
+    for(let index = 0; index< this.length; index++){
+        if(callback(this[index], index, this)) {
+            result.push(this[index])
         }
     }
 
