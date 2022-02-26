@@ -1,41 +1,15 @@
-# Website
+<p  align="center">
+  <img src="static/img/logo.png" alt="JScripted" width="200"/>
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+ <h1 align="center">JScripted</h1>
+ <p align="center">JavaScript simplified to the bare minimum for acing your Front End Interviews.</p>
+</p>
 
-### Installation
 
-```
-$ yarn
-```
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-### Local Development
+Please make sure to update tests as appropriate.
 
-```
-$ yarn start
-```
-
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-### Build
-
-```
-$ yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
