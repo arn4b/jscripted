@@ -4,7 +4,8 @@
  */
 
 .heroBanner {
-  padding: 4rem 0;
+  /* padding: 6rem 0; */
+  height: calc(100vh - var(--ifm-navbar-height));
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -16,6 +17,12 @@
   }
 }
 
+.container {
+  margin: auto;
+  width: 100%;
+  z-index: 1;
+}
+
 .buttons {
   display: flex;
   align-items: center;
@@ -25,6 +32,16 @@
 .img {
   width: 250px;
   height: 250px;
+  z-index: 1;
+}
+
+.skeleton {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  /* width: 750px; */
+  opacity: 0.1;
+  z-index: 0;
 }
 
 @media screen and (max-width: 768px) {

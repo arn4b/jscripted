@@ -55,6 +55,12 @@ const config = {
             position: 'left',
             label: 'Get Started',
           },
+          {
+            type: 'docSidebar',
+            sidebarId: 'challengeSidebar',
+            position: 'left',
+            label: 'UI Challenges',
+          },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/arn4b/jscripted',
