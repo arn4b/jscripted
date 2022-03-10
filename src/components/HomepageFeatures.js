@@ -8,28 +8,25 @@ const FeatureList = [
     Svg: require('../../static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Polyfills of multiple Core JS functions and methods explained w/ multiple comments for clear understanding 💥.
       </>
     ),
   },
   {
     title: 'Core JS Functions',
-    Svg: require('../../static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('../../static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Explanations and Implementation of popular Core JS functions like <code>memoize</code>, <code>debounce</code> etc.
       </>
     ),
   },
   {
     title: 'UI Challenges',
-    Svg: require('../../static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('../../static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        UI Challenges to make your DOM concepts stronger than ever, curated from a lost of challenges asked by Big Tech companies.
       </>
     ),
   },

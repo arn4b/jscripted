@@ -6,6 +6,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import './index.css';
 import HomepageFeatures from '../components/HomepageFeatures';
+import Features from '../components/Features';
 
 import js from '../../static/img/logo.png'
 import skeleton from '../../static/img/skeleton.png'
@@ -41,6 +42,7 @@ export default function Home() {
       <HomepageHeader />
       <main>
         <HomepageFeatures />
+        <Features />
       </main>
     </Layout>
   );
