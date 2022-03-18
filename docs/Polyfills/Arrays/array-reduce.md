@@ -2,6 +2,8 @@
 sidebar_position: 5
 id: reduce
 title: Array.reduce()
+tags:
+  - Polyfill
 ---
 
 # Polyfill for Array.reduce()

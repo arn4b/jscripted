@@ -2,6 +2,8 @@
 sidebar_position: 2
 id: call
 title: Function Polyfills
+tags:
+  - Polyfill
 ---
 
 # Polyfills for Function Methods
