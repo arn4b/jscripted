@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 id: intro
-title: Intro to IntersectionObserver API
+title: Intro 
 ---
 
 From MDN:

@@ -17,7 +17,7 @@ const options = {
 }
 
 function handleIntersection(entries) {
-  entries.map((entry) => {
+  entries.forEach((entry) => {
     if (entry.isIntersecting) {
       console.log('Log event and unobserve')
       observer.unobserve(target);

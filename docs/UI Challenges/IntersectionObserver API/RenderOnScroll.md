@@ -54,7 +54,7 @@ function handleIntersection(entries) {
 
     // Because we are dealing with an array, we need to loop over each of its items and check if they intersect. If so, we add a CSS class.
 
-    entries.map((entry) => {
+    entries.forEach((entry) => {
         if(entry.isIntersecting){  //IntersectionObserver method to see if the element is in the viewport or not
             entry.target.classList.add('visible')   //adding the visible classname 
         } else {
@@ -79,7 +79,7 @@ const target = document.querySelector('.animated-text')
 
 function handleIntersection(entries) {
   
-    entries.map((entry) => {
+    entries.forEach((entry) => {
         if(entry.isIntersecting){
             entry.target.classList.add('visible')
         } else {
