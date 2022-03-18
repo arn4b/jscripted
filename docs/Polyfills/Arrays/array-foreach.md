@@ -2,6 +2,8 @@
 sidebar_position: 1
 id: foreach
 title: Array.forEach()
+tags:
+  - Polyfill
 ---
 
 # Polyfill for Array.forEach()

@@ -2,6 +2,8 @@
 sidebar_position: 2
 id: filter
 title: Array.filter()
+tags:
+  - Polyfill
 ---
 
 # Polyfill for Array.filter()

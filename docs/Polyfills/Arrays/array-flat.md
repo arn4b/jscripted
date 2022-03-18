@@ -2,6 +2,8 @@
 sidebar_position: 4
 id: flat
 title: Array.flat()
+tags:
+  - Polyfill
 ---
 
 # Polyfill for Array.flat()

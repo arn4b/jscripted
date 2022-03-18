@@ -2,6 +2,8 @@
 sidebar_position: 3
 id: map
 title: Array.map()
+tags:
+  - Polyfill
 ---
 
 # Polyfill for Array.map()
