@@ -1,0 +1,41 @@
+.features {
+  /* display: flex;
+    align-items: center; */
+  padding: 2rem 0;
+  /* width: 100%; */
+  
+}
+
+.parent-card {
+  /* background-color: var(--ifm-color-primary-light); */
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid var(--ifm-color-primary-light);
+  text-align: center;
+  transition: 200ms ease-in;
+  height: 500px;
+}
+
+.parent-card:hover {
+  transform: scale(1.02);
+  box-shadow: var(--ifm-color-gradient) -5px 5px, var(--ifm-color-gradient-light) -10px 10px, var(--ifm-color-gradient-lighter) -15px 15px,var(--ifm-color-gradient-lightest) -20px 20px;
+  transition: 100ms ease-in;
+}
+
+.img {
+  height: 150px;
+  margin: 2rem;
+}
+
+.parent-card h1 {
+  color: var(--ifm-color-primary-dark);
+}
+
+.text{
+  font-size: 1.25rem;
+}

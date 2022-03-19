@@ -41,7 +41,7 @@ export default function Home() {
       description="JavaScript made simple for Frontend Interviews">
       <HomepageHeader />
       <main>
-        <HomepageFeatures />
+        {/* <HomepageFeatures /> */}
         <Features />
       </main>
     </Layout>

@@ -14,6 +14,11 @@
   --ifm-color-primary-lighter: #4361EE;
   --ifm-color-primary-lightest: #4CC9F0;
   --ifm-code-font-size: 95%;
+
+  --ifm-color-gradient: #480ca8a3;
+  --ifm-color-gradient-light: #480ca874;
+  --ifm-color-gradient-lighter: #480ca84c;
+  --ifm-color-gradient-lightest: #480ca82c;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -21,10 +26,15 @@ html[data-theme='dark'] {
   --ifm-color-primary: #F7DF1E;
   --ifm-color-primary-dark: #FAA307;
   --ifm-color-primary-darker: #FFBA08;
-  --ifm-color-primary-darkest: #370617;
+  --ifm-color-primary-darkest: #cb9202;
   --ifm-color-primary-light: #F48C06;
   --ifm-color-primary-lighter: #FAA307;
   --ifm-color-primary-lightest: #FFBA08;
+
+  --ifm-color-gradient: #f48d06dd;
+  --ifm-color-gradient-light: #f48d06a1;
+  --ifm-color-gradient-lighter: #f48d066f;
+  --ifm-color-gradient-lightest: #f48d0633;
 }
 
 .docusaurus-highlight-code-line {

@@ -9,6 +9,20 @@ tags:
 
 ## Let's begin
 
+```css
+.lazyload {
+  opacity: 0;
+  width: 100%;
+  height: 360px;
+  transition: opacity 0.5s ease;
+  vertical-align: middle;
+}
+.lazyload.loaded {
+  opacity: 1;
+  height: auto;
+}
+```
+
 ```js
 const images = document.querySelectorAll('.lazyload');
 
