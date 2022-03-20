@@ -38,4 +38,9 @@
 
 .text{
   font-size: 1.25rem;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
 }
