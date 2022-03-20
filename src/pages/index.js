@@ -11,19 +11,19 @@ import Features from '../components/Features';
 import js from '../../static/img/logo.png'
 import skeleton from '../../static/img/skeleton.png'
 
-import ReactGA from 'react-ga';
-ReactGA.initialize('G-N00B3QEC13');
-ReactGA.pageview(window.location.pathname + window.location.search);
+// import ReactGA from 'react-ga';
+// ReactGA.initialize('G-N00B3QEC13');
+// ReactGA.pageview(window.location.pathname + window.location.search);
 
-const pageViewsTracking = (props) => {
-  const pathname = props.match.path
+// const pageViewsTracking = (props) => {
+//   const pathname = props.match.path
 
-  let pageView
-  if(pathname === "*") pageView = '/not-found'
-  else pageView = pathname
+//   let pageView
+//   if(pathname === "*") pageView = '/not-found'
+//   else pageView = pathname
 
-  ReactGA.pageview(pageView)
-}
+//   ReactGA.pageview(pageView)
+// }
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
