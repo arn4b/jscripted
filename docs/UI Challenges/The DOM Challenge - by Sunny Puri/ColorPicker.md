@@ -1,7 +1,10 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 id: color_picker
 title: Color Picker
+tags:
+  - DOM APIs
+  - UI Challenge
 ---
 
 import Tabs from "@theme/Tabs";
