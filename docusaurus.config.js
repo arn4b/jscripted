@@ -47,7 +47,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'JScripted',
+        title: 'JScriptedᴮᵉᵗᵃ',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
