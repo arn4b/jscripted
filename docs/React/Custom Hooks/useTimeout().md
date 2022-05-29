@@ -4,29 +4,36 @@ id: usetimeout
 title: useTimeout()
 ---
 
-First we setup our hook, which will be a function. The callback function and delay are passed as the parameters. Since we are using TypeScript, we will specify the types of the arguments as a function and a number respectively.
-
 ```ts
-import React, {useEffect, useRef} from 'react'
+import React, {useState, useEffect, useCallback, useRef} from 'react'
 
-export function useTimeout(callback: () => void, delay: number) {
-
-}
-```
-
-
-
-```ts
-import React, {useEffect, useRef} from 'react'
-
-export function useTimeout(callback: () => void, delay: number) {
-    const reference = useRef(callback)
-    reference.current = callback
+export default function useTimeout(callback, delay) {
+    const callbackRef = useRef(callback)
+    const timeoutRef = useRef()
 
     useEffect(() => {
-        const timer = setTimeout(() => reference.current(), delay)
-        return (() => clearTimeout(timer))
+        callbackRef.current = callback
+    }, [callback])
+
+    const set = useCallback(() => {
+        timeoutRef.current = setTimeout(() => callbackRef.current(), delay)
     }, [delay])
+
+    const clear = useCallback(() => {
+        timeoutRef.current && clearTimeout(timeoutRef.current)
+    }, [])
+
+    useEffect(() => {
+        set()
+        return clear
+    }, [delay, set, clear])
+
+    const reset = useCallback(() => {
+        clear()
+        set()
+    }, [clear, set])
+
+    return { reset, clear }
 }
 
 ```
