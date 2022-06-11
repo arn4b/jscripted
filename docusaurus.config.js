@@ -29,8 +29,7 @@ const config = {
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl:
-            'https://github.com/arn4b/jscripted/tree/master/',
+          editUrl: 'https://github.com/arn4b/jscripted/tree/master/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -52,8 +51,7 @@ const config = {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
         },
-        items: [
-          {
+        items: [{
             type: 'doc',
             docId: 'intro',
             position: 'left',
@@ -71,11 +69,21 @@ const config = {
             position: 'left',
             label: 'React',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            to: '/blog',
+            label: 'Blog',
+            position: 'left'
+          },
           {
             href: 'https://github.com/arn4b/jscripted',
             label: 'GitHub',
             position: 'right',
+          },
+          {
+            href: 'https://arn4b.notion.site/UI-Challenges-8e27a0fd6797402bb8235a285eead144',
+            position: 'left',
+            label: "Quick Revision",
+            'aria-label': 'Quick Revision',
           },
         ],
       },
@@ -83,41 +91,18 @@ const config = {
         style: 'light',
         links: [
           {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+            title: 'About',
+            items: [{
+                label: 'About Me',
+                href: 'https://arn4b.tech',
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
+                href: 'https://twitter.com/_arn4b_',
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/arn4b',
               },
             ],
           },
