@@ -27,7 +27,7 @@ export function useDebounce<T>(value: T, delay: number): T {
 ```js
 import React, {useState, useEffect, useCallback, useRef} from 'react'
 
-export default function useDebaounce(callback, delay, dependencies) {
+export default function useDebounce(callback, delay, dependencies) {
     const { reset, clear } = useTimeout(callback, delay)
     useEffect(reset, [...dependencies, reset])
     useEffect(clear, [])
