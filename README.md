@@ -2,7 +2,7 @@
   <img src="static/img/logo.png" alt="JScripted" width="200"/>
 
  <h1 align="center">JScripted</h1>
- <p align="center">JavaScript simplified to the bare minimum for acing your Front End Interviews.</p>
+ <p align="center">JavaScript simplified to the bare minimum for acing your Frontend Interviews.</p>
 </p>
 
 

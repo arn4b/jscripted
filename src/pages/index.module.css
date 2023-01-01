@@ -5,7 +5,7 @@
 
 .heroBanner {
   /* padding: 6rem 0; */
-  height: calc(100vh - var(--ifm-navbar-height));
+  /* height: calc(100vh - var(--ifm-navbar-height)); */
   text-align: center;
   position: relative;
   overflow: hidden;
