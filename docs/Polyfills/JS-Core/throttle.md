@@ -6,23 +6,32 @@ tags:
   - Polyfill
 ---
 
+## What does throttle do?
+
+It throttles the function 😀👍
+
 ``` typescript
 /**
  * Throttle in TypeScript
  * @param func Function to be throttled
- * @param limit Number of milliseconds to delay
- * @return A new function that wraps the given function
- * @see https://stackoverflow.com/a/27078401/112731
- * @see https://codeburst.io/throttling-and-debouncing-in-javascript-b01cad5c8edf
+ * @param delay Number of milliseconds to delay
+ * @returns A new function that wraps the given function
  */
 
-const throttle: (func: Function, limit: number) => Function = (func, limit) => {
-    let inThrottle: boolean;
-    return function(...args: any[]) {
-        if (!inThrottle) {
-            func(...args);
-            inThrottle = true;
-            setTimeout(() => inThrottle = false, limit);
+const throttle: (func: Function, delay: number) => Function = (func, delay) => {
+    let isThrottled: boolean;
+
+    return function() {
+        const context = this;
+        const args = arguments;
+
+        if (!isThrottled) {
+            func.apply(context, args);
+            isThrottled = true;
+
+            setTimeout(() => {
+                isThrottled = false
+            }, delay);
         }
     }
 }

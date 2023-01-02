@@ -6,28 +6,30 @@ tags:
   - Polyfill
 ---
 
+## What does debounce do?
+
+It debounces the function 😀👍
+
 ``` typescript
 /**
  * Debounce in TypeScript
- * @param func Function to be debounced
- * @param wait Number of milliseconds to delay
- * @param immediate Whether to execute the function immediately
+ * @param func {Function} Function to be debounced
+ * @param delay {number} Number of milliseconds to delay
  * @returns A new function that wraps the given function
  */
 
-const debounce: 
-    (func: Function, wait: number, immediate?: boolean) => 
-        Function = (func, wait, immediate) => {
-            let timeout: any;
-            return function executedFunction(...args: any[]) {
-                const later = () => {
-                timeout = null;
-                if (!immediate) func(...args);
-                };
-                const callNow = immediate && !timeout;
-                clearTimeout(timeout);
-                timeout = setTimeout(later, wait);
-                if (callNow) func(...args);
-            };
+function debounce(func: Function, delay: number) {
+    let timer = null;
+
+    return function() {
+        const context = this;
+        const args = arguments;
+
+        clearTimeout(timer)
+
+        timer = setTimeout(() => {
+            func.apply(context, args);
+        }, delay)
+    }
 };
 ```
