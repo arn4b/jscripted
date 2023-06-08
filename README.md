@@ -1,5 +1,5 @@
 <p  align="center">
-  ![image](https://github.com/arn4b/jscripted/assets/60937304/d3d1e914-b75c-437c-9fa2-a88f862b1efd)
+  <img src='https://github.com/arn4b/jscripted/assets/60937304/3bbdc9a5-0262-4f65-a14b-ed855fedff3f' alt='jscripted' />
 
  <h1 align="center">JScripted</h1>
  <p align="center">JavaScript simplified to the bare minimum for acing your Frontend Interviews.</p>
