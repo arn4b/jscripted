@@ -3,6 +3,7 @@
 
  <h1 align="center">JScripted</h1>
  <p align="center">JavaScript simplified to the bare minimum for acing your Frontend Interviews.</p>
+ <p align="center">Check it out at <a href='https://jscripted.vercel.app/'>jscripted.vercel.app</a></p>
 </p>
 
 
