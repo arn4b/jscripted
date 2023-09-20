@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'JScripted',
   tagline: 'JavaScript simplified to the bare minimum for acing your Frontend Interviews.',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://jscripted.vercel.app',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -112,6 +112,15 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+      },
+      algolia: {
+        // The application ID provided by Algolia
+        appId: 'THN8PNBPVL',
+  
+        // Public API key: it is safe to commit it
+        apiKey: '7551fff714227e2a7ecdb0c2222a8dad',
+  
+        indexName: 'YOUR_INDEX_NAME',
       },
     }),
 };
